@@ -38,7 +38,7 @@ function getDropboxClient() {
             return;
         }
         __dropboxClient = new DropboxClient(authToken, {
-            compat: true,
+            compat: false,
             compatCorsHack: false
         });
     }
